@@ -18,13 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let taskStore = TaskStore()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-        // Static tasks init
-//        let todoTasks = [Task(name: "Finish To-do list app"), Task(name: "Go grocery shopping"), Task(name: "Watch Tech videos"), Task(name: "Solve Leetcode problems")]
-//        let doneTasks = [Task(name: "Do Laundry"), Task(name: "Eat Pizza")]
-//
-//        taskStore.tasks = [todoTasks, doneTasks]
+        
+        /*
+        GIDSignIn.sharedInstance().clientID = kClient
+            var configureError:NSError?
+            GGLContext.sharedInstance().configureWithError(&configureError)
+            assert(configureError == nil, "Error configuring Google services: \(configureError)")
+           
+            return true
+        }
+        func application(application: UIApplication,
+                         openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+            return GIDSignIn.sharedInstance().handleURL(url,
+                                                        sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+                                                        annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+        }
+        */
+        
         
         let taskController = window?.rootViewController?.childViewControllers.first as? TasksController
         taskController?.taskStore = taskStore
