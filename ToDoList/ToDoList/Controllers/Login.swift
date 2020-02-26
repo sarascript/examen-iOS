@@ -5,7 +5,6 @@
 //  Created by Sara Correas on 26/02/2020.
 //  Copyright © 2020 sarascript. All rights reserved.
 //
-
 import UIKit
 
 class Login: UIViewController {
@@ -37,7 +36,6 @@ class Login: UIViewController {
 
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
